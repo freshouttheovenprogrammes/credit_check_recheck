@@ -15,4 +15,17 @@ class CreditCheck
     @number.digits
   end
 
+  def new_array
+    array_input.map.with_index do |x, i|
+      if i % 2 != 0
+         x * 2
+       else i % 2 == 0
+          x
+       end
+      end
+    # and just iterate through the odds
+    # if index is odd create new array with x values.
+  end
+
+
 end
